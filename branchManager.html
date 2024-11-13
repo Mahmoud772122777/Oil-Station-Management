@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Enter the details for your branch:</h1>
+
+    <!-- Dropdown for selecting branch -->
+    <label for="branch">Select Branch:</label>
+    <select id="branch">
+        <option value="Al-Aidaros 1">Al-Aidaros 1</option>
+        <option value="Al-Aidaros 2">Al-Aidaros 2</option>
+        <option value="Al-Aidaros 3">Al-Aidaros 3</option>
+        <option value="Al-Aidaros 4">Al-Aidaros 4</option>
+        <option value="Al-Aidaros 5">Al-Aidaros 5</option>
+        <option value="Al-Aidaros 6">Al-Aidaros 6</option>
+        <option value="Al-Aidaros 7">Al-Aidaros 7</option>
+        <option value="Al-Aidaros 8">Al-Aidaros 8</option>
+        <option value="Al-Aidaros 9">Al-Aidaros 9</option>
+        <option value="Al-Aidaros 10">Al-Aidaros 10</option>
+    </select>
+
+    <!-- Existing inputs for data -->
+    <h2>Pumps Data</h2>
+    <label>Petrol Pump Sales (Liters):</label>
+    <input type="number" id="petrolSales" value="1000">
+    <label>Diesel Pump Sales (Liters):</label>
+    <input type="number" id="dieselSales" value="5000">
+
+    <h2>Tanks Data</h2>
+    <label>Petrol Tank Remaining Quantity (Liters):</label>
+    <input type="number" id="petrolTank" value="55000">
+    <label>Diesel Tank Remaining Quantity (Liters):</label>
+    <input type="number" id="dieselTank" value="25000">
+
+    <h2>Price per Liter</h2>
+    <label>Petrol Price (per Liter):</label>
+    <input type="number" id="petrolPrice" value="125">
+    <label>Diesel Price (per Liter):</label>
+    <input type="number" id="dieselPrice" value="145">
+
+    <button onclick="submitData()">Submit</button>
+
+    <h2>Results:</h2>
+    <p id="results"></p>
+
+    <script src="frontend/branchManager.js"></script>
+</body>
+</html>
